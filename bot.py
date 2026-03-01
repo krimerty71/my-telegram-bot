@@ -7,7 +7,7 @@ bot = telebot.TeleBot(TOKEN)
 
 @bot.message_handler(commands=['start'])
 def start(message):
-    bot.send_message(message.chat.id, "Бот работает 24/7 🚀")
+    bot.send_message(message.chat.id, "Напиши /post.")
 
 print("BOT STARTED")
 bot.infinity_polling()
